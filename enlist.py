@@ -7,9 +7,14 @@ def cd(a=0):
     path = '/sdcard/Project/Input/'
   elif a == 1:
     path = '/sdcard/Project/iaj/'
-  os.chdir(path) 
+  os.chdir(path)
     
 cd()
+
+def list_input():
+  cd()
+  for li in os.listdir():
+    print(li)
 
 def is_fac_no(fac):
   try:

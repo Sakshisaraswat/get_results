@@ -41,8 +41,8 @@ def load_all(students):
       print('HTML file not found. Download files by option 1 first...') 
       return
     try:
-      spi = soup('table')[2].findAll('tr')[1].findAll('th')[5].string.strip()
-      cpi = soup('table')[2].findAll('tr')[1].findAll('th')[4].string.strip()
+      spi = soup('table')[2].findAll('tr')[1].findAll('th')[4].string.strip()
+      cpi = soup('table')[2].findAll('tr')[1].findAll('th')[5].string.strip()
     except IndexError as err:
       spi = 0
       cpi = 0
@@ -62,8 +62,8 @@ def load(students, key):
     page = fi.read()
     soup = BeautifulSoup(page)
   try:
-    spi = soup('table')[2].findAll('tr')[1].findAll('th')[5].string.strip()
-    cpi = soup('table')[2].findAll('tr')[1].findAll('th')[4].string.strip()
+    spi = soup('table')[2].findAll('tr')[1].findAll('th')[4].string.strip()
+    cpi = soup('table')[2].findAll('tr')[1].findAll('th')[5].string.strip()
   except IndexError as err:
     spi = 0
     cpi = 0

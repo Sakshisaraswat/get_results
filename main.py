@@ -43,7 +43,9 @@ Then you will prompted 3 options:
 Note: App creates required files and databases in iaj/ folder for proper functioning. Please don't delete those files. 
     
     
-Let's start:"""
+Let's start:
+
+"""
 
 os.chdir('/sdcard/Project/')
 
@@ -130,7 +132,11 @@ def main(students):
 wrong=1
 while(wrong):
   
-  name = input('Enter the Excel file name: ').rstrip()
+  print ( 'List of files in Input directory:' )
+  enlist.list_input()
+  name = input ( '\n\nEnter the Excel file name: ').rstrip()
+  
+  
   students = None
   students = enlist.populate(name)
   if students == None:

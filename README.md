@@ -13,7 +13,7 @@ There's no guarantee that code will be easy to understand. Program is modular an
 
 ######Requirements
 + Requires Python Environment set up, (duh). :unamused:
-+ Currently, script is made to run on Android, see `master` branch in future for working in Windows, Linux, and OS X. 
++ This branch hosts script made to run on Android, see `master` branch for working in Windows, Linux, and OS X. 
 + Requires internet connection to download results. Option 2 and 3 *(Read [Instructions](#instructions) in `main.py`)* do not require internet if result has been downloaded previously. 
 + Requires an Attendance Excel file to access student name, faculty number and enrolment number. 
 

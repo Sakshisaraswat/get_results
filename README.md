@@ -12,7 +12,8 @@ Code of the program is open *(obviously, Python)* and it is encouraged to use it
 There's no guarantee that code will be easy to understand. Program is modular and does similar works in different modules so redundancy is natural. Assume it to be dirty coded. Be my guest to optimise it. Don't expect helpful comments. :stuck_out_tongue:
 
 ######Requirements
-+ Requires Python Environment set up, (duh). :unamused:
++ Requires Python 3 Environment set up, (duh). :unamused:
++ Needs these Python Modules to be installed - `BeautifulSoup`, `requests`, `xlsxwriter`, `xlrd`. Install libraries using `pip install -module_name-`. 
 + This branch hosts script made to run on Android, see `master` branch for working in Windows, Linux, and OS X. 
 + Requires internet connection to download results. Option 2 and 3 *(Read [Instructions](#instructions) in `main.py`)* do not require internet if result has been downloaded previously. 
 + Requires an Attendance Excel file to access student name, faculty number and enrolment number. 

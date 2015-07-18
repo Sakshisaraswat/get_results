@@ -105,4 +105,5 @@ def populate(file_name, reset=0):
       print('Bad dictionary file... \nRetrying reading Excel file')
       return get_students(file_name) 
   else :
+    os.remove('/sdcard/Project/iaj/results.db')
     return get_students(file_name)

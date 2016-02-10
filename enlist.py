@@ -105,5 +105,8 @@ def populate(file_name, reset=0):
       print('Bad dictionary file... \nRetrying reading Excel file')
       return get_students(file_name) 
   else :
-    os.remove('/sdcard/Project/iaj/results.db')
+    try:
+      os.remove('/sdcard/Project/iaj/results.db')
+    except OSError as err:
+      print('Already Removed')
     return get_students(file_name)
